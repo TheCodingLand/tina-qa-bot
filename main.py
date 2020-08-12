@@ -49,10 +49,12 @@ def qa_prediction(question,context):
 @post('/predict')
 def predict():
     msg = json.loads(request.body.read()) # get the reques parameters  
+    print(msg)
     question = msg['question'] #we get a keyerror if the model is not loaded in memory
     title,article = search_articles(question)
     context = get_body_content(article)
     result = qa_prediction(question, context)
+    print (result)
     return result
 
 
