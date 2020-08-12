@@ -9,3 +9,4 @@ pymongo
 pyyaml
 simpletransformers
 torch
+bottle
