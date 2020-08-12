@@ -10,3 +10,4 @@ pyyaml
 simpletransformers
 torch
 bottle
+atlassian-python-api
