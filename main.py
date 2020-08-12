@@ -53,23 +53,3 @@ run(host='0.0.0.0', port=8080, debug=True)
 
 
 
-
-question = 'How can I change the color of the text in confluence ?'
-context = get_body_content(domain, pageid)
-print (context)
-qa = QA()
-result = qa.predict(context, question)
-print (result)
-answer=result[0][0]['answer'][0]
-    return { 'results': probabilities }
-
-run(host='0.0.0.0', port=8080, debug=True)
-
-# To use : 
-
-import http.client
-preloaded_models = http.client.HTTPConnection('localhost', 8080)
-params = { 'model_name' : 'model_1', "text" : "my text to predict", 'model_type' :'distilbert', 'cuda' : True, "model_path": '/models/model_1/' }
-preloaded_models.request('POST', '/predict', json.dumps(params))
-
-
