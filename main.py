@@ -41,7 +41,7 @@ def qa_prediction(question,context):
     start=context.find(answer)
     end = start + len(answer)
     html_answer=f'<p>{context[start-20:start]}</p><span style="background-color:#dfd;">{context[start:end]}</span><p>{context[end:end+20]}</p>'
-    return { "context": context, "question" : question, "start" : start, "end": end, "html" :html_answer}
+    return { "context": context, "question" : question, "start" : start, "end": end, "html" :html_answer, "link": "test"}
 
 
 
