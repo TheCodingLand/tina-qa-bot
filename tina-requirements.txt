@@ -1,0 +1,1 @@
+http://gitlab.tina.ctg.lu/jlebourg/lib-tina-logger/-/jobs/artifacts/master/raw/dist/TinaLogger-0.1.0-py3-none-any.whl?job=wheel

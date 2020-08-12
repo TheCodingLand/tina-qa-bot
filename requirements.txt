@@ -1,0 +1,11 @@
+pandas
+redis
+rq
+seqeval
+beautifulsoup4
+lxml
+python-logstash
+pymongo
+pyyaml
+simpletransformers
+torch
